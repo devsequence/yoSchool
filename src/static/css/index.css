@@ -1817,6 +1817,9 @@ input {
   .hero .section-parallax img:nth-of-type(1) {
     display: none;
   }
+  .hero .section-parallax img:nth-of-type(6) {
+    left: -140px;
+  }
   .hero .section-parallax img:nth-of-type(3) {
     display: none;
   }
@@ -1897,6 +1900,16 @@ input {
     width: 100%;
     height: 100%;
   }
+  .reviews-info {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .reviews-inner {
+    max-width: 100%;
+  }
+  .header-nav li {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 992px) {
   .hero {
@@ -1911,6 +1924,49 @@ input {
   .hero-media img {
     width: 100%;
     margin: 0 auto;
+  }
+  .about .top-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about .title-section {
+    margin-bottom: 15px;
+  }
+  .about .text-section {
+    padding-left: 0;
+  }
+  .about-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin: 0 -15px;
+  }
+  .about-wrap .about-item {
+    margin: 0 15px 30px;
+    width: calc(50% - 30px);
+    height: 100%;
+    min-height: 280px;
+  }
+  .about-item:nth-of-type(3) {
+    clip-path: none;
+  }
+  .about-item:nth-of-type(3) .about-item__media {
+    max-height: 160px;
+  }
+  .service-item {
+    width: calc(50% - 30px);
+  }
+  .course-desc ul li {
+    padding: 15px;
+    font-size: 16px;
+    margin: 0 10px 10px 0;
+  }
+  .course-media {
+    display: none;
+  }
+  .course-desc {
+    max-width: 100%;
   }
   .header {
     padding: 11px 0;
@@ -1946,7 +2002,7 @@ input {
   .header-nav {
     background: #FFFFFF;
     position: absolute;
-    top: 55px;
+    top: 70px;
     width: 100%;
     left: 0;
   }
@@ -1982,5 +2038,13 @@ input {
   .header-social a {
     width: 48px;
     height: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-text:after {
+    display: none;
+  }
+  .service-item {
+    width: calc(100% - 30px);
   }
 }
