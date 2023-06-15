@@ -1,0 +1,122 @@
+.footer{
+  background: #FAFAFF;
+  .container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+  }
+  &-top{
+    padding: 56px 0;
+  }
+  &-nav{
+    margin: -13px auto 0;
+    ul{
+      display: flex;
+    }
+    li{
+      margin-right: 45px;
+      position: relative;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+    a{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: $default;
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+  &-popup{
+    margin: -13px 22px 0 0;
+    .btn-primary{
+      font-size: 13px;
+      line-height: 17px;
+      padding: 16px 32px;
+    }
+  }
+  &-social{
+    margin: -13px 0 0 0;
+    ul{
+      display: flex;
+      align-items: center;
+    }
+    li{
+      margin-right: 4px;
+      line-height: 1;
+      &:first-of-type{
+        a{
+          &:after{
+            box-shadow: 0px 0px 20px rgba(65, 159, 217, 0.3);
+          }
+        }
+      }
+      &:last-of-type{
+        margin-right: 0;
+        a{
+          &:after{
+            box-shadow: 0px 0px 20px rgba(103, 93, 169, 0.4);
+          }
+        }
+      }
+    }
+    a{
+      position: relative;
+      display: inline-block;
+      &:after{
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        transition: all ease 300ms;
+      }
+      &:hover{
+        &:after{
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &-logo{
+    width: 175px;
+    height: 46px;
+    a, img{
+      display: inline-block;
+      height: 100%;
+    }
+  }
+  &-copy{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    color: #3F3F3F;
+  }
+  &-bottom{
+    padding: 26px 0 31px;
+    text-align: center;
+    .container{
+      justify-content: center;
+    }
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      max-width: 1600px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 1px;
+      background: #D6D6E0;
+    }
+  }
+}
