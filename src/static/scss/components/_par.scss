@@ -2,7 +2,6 @@
   img{
     transition: all ease 400ms;
     animation: parallaxFadeIn 1s;
-
   }
 }
 @keyframes parallaxFadeIn {
@@ -285,6 +284,11 @@
   }
 }
 @media screen and (max-width: 992px){
+  .section-parallax{
+    img{
+      transition: all ease 100ms;
+    }
+  }
   .hero {
     .section-parallax {
       img{
