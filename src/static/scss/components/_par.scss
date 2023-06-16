@@ -20,7 +20,6 @@
   .container{
     position: relative;
   }
-
   .section-parallax{
     position: absolute;
     overflow: hidden;
@@ -68,6 +67,8 @@
   }
 }
 .about{
+  position: relative;
+  overflow: hidden;
   .container{
     position: relative;
   }
@@ -200,6 +201,8 @@
   }
 }
 .contact{
+  position: relative;
+  overflow: hidden;
   .container{
     position: relative;
   }
@@ -313,6 +316,11 @@
         }
         &:nth-of-type(3){
           display: none;
+        }
+        &:nth-of-type(5) {
+          right: 0;
+          bottom: 350px;
+          width: 220px;
         }
       }
     }
