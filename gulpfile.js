@@ -25,7 +25,7 @@ gulp.task('build:clean', function(cb){
 
 gulp.task('build:production', function () {
     var processors = [
-        autoprefixer({ overrideBrowserslist: ['last 2 versions'],
+        autoprefixer({ overrideBrowserslist: ['last 5 versions'],
             cascade: false}),
         cssnano()
     ];
